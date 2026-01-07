@@ -14,6 +14,7 @@ export function Reviews({ config, placeDetails }: ReviewsProps) {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     // Display up to 9 reviews
     const reviews = placeDetails.reviews.slice(0, 9);
+    const [expandedReviews, setExpandedReviews] = useState<Set<number>>(new Set());
 
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
