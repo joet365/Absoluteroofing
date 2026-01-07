@@ -41,7 +41,7 @@ export function MobileCallBar({ config }: MobileCallBarProps) {
         >
             <a
                 href={`tel:${config.phone}`}
-                className="flex items-center justify-center gap-3 bg-primary text-primary-foreground px-6 py-4 shadow-lg hover:bg-primary/90 transition-colors"
+                className="flex items-center justify-center gap-3 bg-red-600 text-white px-6 py-4 shadow-lg hover:bg-red-700 transition-colors"
             >
                 <Phone className="w-5 h-5 animate-pulse" />
                 <span className="font-semibold text-lg">Call Now: {config.phone}</span>

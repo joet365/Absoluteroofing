@@ -86,7 +86,7 @@ export function Hero({ config, placeDetails }: HeroProps) {
 
                 </div>
             </section>
-        </section >
+
 
             <QuoteModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </>
