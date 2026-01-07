@@ -31,12 +31,12 @@ export function SiteHeader({ config }: { config: ClientConfig }) {
                         {config.phone}
                     </a>
 
-                    <Link
-                        href={config.ctaLink || "#contact"}
+                    <a
+                        href={`tel:${config.phone.replace(/\D/g, '')}`}
                         className="hidden md:inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-white shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
                         FREE INSPECTION
-                    </Link>
+                    </a>
 
                     {/* Mobile Menu Toggle */}
                     <button className="md:hidden p-2">
