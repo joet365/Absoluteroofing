@@ -28,7 +28,7 @@ export const ABSOLUTE_CONFIG: ClientConfig = {
     businessName: "Absolute Roofing Solutions",
     niche: "Roofing",
     phone: "(713) 562-2172",
-    email: "info@absoluteroofingsolutions.com",
+    email: "d.roof.mendoza@gmail.com",
     address: "25723 Glen Loch Dr, Spring, TX 77380",
     city: "Spring",
     state: "TX",
