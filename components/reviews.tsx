@@ -78,23 +78,22 @@ export function Reviews({ config, placeDetails }: ReviewsProps) {
                     </div>
                 </div>
 
-                {/* Carousel Container */}
-                <div className="relative group">
-                    {/* Navigation Buttons */}
+                <div className="relative group px-4 md:px-0">
+                    {/* Navigation Buttons - Visible on all screens, positioned on edges */}
                     <button
                         onClick={() => scroll('left')}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center opacity-0 group-hover:opacity-100 md:opacity-100 disabled:opacity-50"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 md:-translate-x-12 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100 disabled:opacity-50"
                         aria-label="Previous reviews"
                     >
-                        <ChevronLeft className="w-6 h-6" />
+                        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
 
                     <button
                         onClick={() => scroll('right')}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center opacity-0 group-hover:opacity-100 md:opacity-100"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 md:translate-x-12 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center opacity-100 md:opacity-0 md:group-hover:opacity-100"
                         aria-label="Next reviews"
                     >
-                        <ChevronRight className="w-6 h-6" />
+                        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
                     </button>
 
                     {/* Scrollable Grid */}
